@@ -1,4 +1,73 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+:root{
+    --color-1: #f0ead2;
+    --color-2: #dde5b6;
+    --color-3: #adc178;
+    --color-4: #a98467;
+    --color-5: #6c584c;
+    --color-6: #344e41;
+    --color-7: #a3b18a;
+}
+.navbar {
+    font-size: 1.2rem;
+}
+.menu-bg {
+    background-color: var(--color-6) !important;
+}
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/image-3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.banner-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.banner-title {
+    font-size: 6rem;
+    color: white;
+}
+
+.contact {
+    background-color: var(--color-1);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: var(--color-1);
+    border: none;
+    border-bottom: 1px solid #344e41;
+}
+
+
+textarea.form-control:focus, 
+input.form-control:focus {
+    box-shadow: none;
+    background-color: var(--color-1);
+    border: none;
+    border-bottom: 1px solid #344e41;
+}
+
+
+
+.footer {
+    background-color: var(--color-5);
+}
+.footer-text {
+    font-size: 1.2rem;
+    color: white;;
 }
