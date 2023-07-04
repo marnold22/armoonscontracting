@@ -4,7 +4,7 @@
     font-family: 'Ysabeau SC', sans-serif;
 }
 
-:root{
+/* :root {
     --color-1: #f0ead2;
     --color-2: #dde5b6;
     --color-3: #adc178;
@@ -12,21 +12,46 @@
     --color-5: #6c584c;
     --color-6: #344e41;
     --color-7: #a3b18a;
+} */
+
+/* :root {
+    --color-1: #EFF6E0;
+    --color-1-1: #5e503f;
+    --color-2: #AEC3B0;
+    --color-3: #598392;
+    --color-4: #124559;
+    --color-5: #01161E;
+} */
+
+:root {
+    --color-1: #f5ebe0;
+    --color-2: #ddbea9;
+    --color-3: #cb997e;
+    --color-4: #b7b7a4;
+    --color-5: #a5a58d;
+    --color-6: #6b705c;
 }
+
 .navbar {
     font-size: 1.2rem;
 }
+.navbar-logo {
+    width: 200px;
+}
+
 .menu-bg {
     background-color: var(--color-6) !important;
 }
+
 .hero-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/image-3.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/image-1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
+
 .banner-content {
     margin: 0;
     position: absolute;
@@ -35,9 +60,19 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.banner-title {
+
+.home-title {
     font-size: 6rem;
     color: white;
+}
+
+.about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.slider-img {
+    width: 100%;
 }
 
 .contact {
@@ -53,8 +88,7 @@ textarea.form-control {
     border-bottom: 1px solid #344e41;
 }
 
-
-textarea.form-control:focus, 
+textarea.form-control:focus,
 input.form-control:focus {
     box-shadow: none;
     background-color: var(--color-1);
@@ -62,12 +96,60 @@ input.form-control:focus {
     border-bottom: 1px solid #344e41;
 }
 
+.contact-btn {
+    background-color: var(--color-5);
+    border: none;
+}
 
+.contact-btn:hover {
+    background-color: var(--color-4);
+}
+
+.contact-btn:focus,
+.contact-btn:active {
+    background-color: var(--color-5);
+}
 
 .footer {
     background-color: var(--color-5);
 }
+
 .footer-text {
     font-size: 1.2rem;
-    color: white;;
+    color: white;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* XXL */
+@media screen and (max-width:1400px) {}
+
+/* XL */
+@media screen and (max-width:1200px) {}
+
+/* LG */
+@media screen and (max-width:992px) {}
+
+/* MD */
+@media screen and (max-width:768px) {}
+
+/* SM */
+@media screen and (max-width:576px) {
+    .home-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .offcanvas {
+        --bs-offcanvas-width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-text {
+        font-size: 1rem;
+    }
 }
