@@ -4,25 +4,6 @@
     font-family: 'Ysabeau SC', sans-serif;
 }
 
-/* :root {
-    --color-1: #f0ead2;
-    --color-2: #dde5b6;
-    --color-3: #adc178;
-    --color-4: #a98467;
-    --color-5: #6c584c;
-    --color-6: #344e41;
-    --color-7: #a3b18a;
-} */
-
-/* :root {
-    --color-1: #EFF6E0;
-    --color-1-1: #5e503f;
-    --color-2: #AEC3B0;
-    --color-3: #598392;
-    --color-4: #124559;
-    --color-5: #01161E;
-} */
-
 :root {
     --color-1: #f5ebe0;
     --color-2: #ddbea9;
@@ -30,6 +11,7 @@
     --color-4: #b7b7a4;
     --color-5: #a5a58d;
     --color-6: #6b705c;
+    --color-7: #504136;
 }
 
 .navbar {
@@ -38,43 +20,65 @@
 .navbar-logo {
     width: 200px;
 }
-
 .menu-bg {
-    background-color: var(--color-6) !important;
+    background-color: var(--color-7) !important;
 }
-
-.hero-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/image-1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-}
-
-.banner-content {
-    margin: 0;
+.navbar-custom {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
-
+.col-left {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/assets/image-1.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+.col-right {
+    background-color: var(--color-6);
+    height: 80vh;
+}
 .home-title {
     font-size: 6rem;
-    color: white;
+    color: #fff;
+    padding-top: 13rem;
+}
+.tan-btn {
+    background-color: var(--color-3);
+    border: 2px solid var(--color-3)
+}
+.tan-btn:hover {
+    background-color: var(--color-2);
+    border: 2px solid var(--color-2);
+    color: #fff;
 }
 
+
+
+/* ABOUT */
 .about {
+    background-color: var(--color-1);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
+/* PROJECTS */
+.projects {
+    background-color: var(--color-1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 .slider-img {
+    object-position: bottom;
     width: 100%;
+    height: 50%;
+}
+.arrow {
+    font-size: 5rem;
+    font-weight: 100;
+    padding-top: 8rem;
+    cursor: pointer;
 }
 
+
+/* CONTACT */
 .contact {
     background-color: var(--color-1);
     padding-top: 5rem;
@@ -127,10 +131,31 @@ input.form-control:focus {
 @media screen and (max-width:1400px) {}
 
 /* XL */
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+    .home-title {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .arrow {
+        font-size: 3rem;
+    }
+}
 
 /* LG */
-@media screen and (max-width:992px) {}
+@media screen and (max-width:991px) {
+    .col-left {
+        display: none;
+    }
+    .col-right {
+        background-image: linear-gradient(rgba(107, 112, 92, 0.75), rgba(107, 112, 92, 0.75)), url('/assets/image-1.jpg');
+        background-size: cover;
+    }
+    .arrow {
+        padding-top: 5rem;
+    }
+}
 
 /* MD */
 @media screen and (max-width:768px) {}
@@ -138,18 +163,27 @@ input.form-control:focus {
 /* SM */
 @media screen and (max-width:576px) {
     .home-title {
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+    .col-right {
+        height: 100vh;
+    }
+    .carousel .carousel-item {
+        height: 100%;
+    }
+    .slider-img {
+        width: 100%;
+    }
+    .arrow {
+        padding-top: 2rem;
+    }
+    .footer-text {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 425px) {
     .offcanvas {
         --bs-offcanvas-width: 300px !important;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .footer-text {
-        font-size: 1rem;
     }
 }
