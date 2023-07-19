@@ -109,30 +109,29 @@
     <div id="contact" class="contact">
         <div class="container">
             <h2 class="text-center">CONTACT US</h2>
-            <form action="#">
+            <form method="post" action="contact-form.php">
                 <div class="row">
                     <div class="col-md">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="fname" placeholder="First Name">
+                            <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name">
                             <!-- <label for="fname">First Name</label> -->
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                            <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name">
                             <!-- <label for="lname">Last Name</label> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
                         <!-- <label for="email">Email Address</label> -->
                     </div>
                 </div>
                 <div class="col-md">
-                    <textarea class="form-control" placeholder="Leave a message..." id="message"
-                        style="height: 150px"></textarea>
+                    <textarea class="form-control" placeholder="Leave a message..." name="message" id="message" style="height: 150px"></textarea>
                     <!-- <label for="message">Leave a message...</label> -->
                 </div>
                 <div class="col-md">
