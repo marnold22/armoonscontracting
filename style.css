@@ -24,7 +24,44 @@
     --color-7: #364958;
 }
 
-/* 2f4858 */
+
+/* THANKYOU PAGE */
+.thankyou-banner {
+    background: linear-gradient(rgba(59, 96, 100, 0.80), rgba(59, 96, 100, 0.80)), url('/assets/image-1.jpg') no-repeat center center fixed;
+    /* background: linear-gradient(rgba(54, 73, 88, 0.80), rgba(54, 73, 88, 0.80)), url('/assets/image-1.jpg') no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.banner-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.banner-heavy-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.banner-soft-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.thankyou-btn {
+    border-color: #fff !important;
+    color: #fff !important;
+    background-color: transparent !important;
+}
+.thankyou-btn:hover {
+    color: #2A2A2B !important;
+    background-color: #fff !important;
+}
+
 
 .navbar {
     font-size: 1.2rem;
