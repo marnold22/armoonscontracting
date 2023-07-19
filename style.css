@@ -19,6 +19,7 @@
 }
 .navbar-logo {
     width: 200px;
+    padding-left: 2rem;
 }
 .menu-bg {
     background-color: var(--color-7) !important;
@@ -27,7 +28,7 @@
     position: absolute;
 }
 .col-left {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/assets/image-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/image-1.jpg');
     background-size: cover;
     height: 80vh;
 }
