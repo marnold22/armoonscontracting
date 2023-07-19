@@ -1,0 +1,6 @@
+# Ignore vendor (composer install)
+vendor/
+composer.lock
+
+# Credentials
+.env
