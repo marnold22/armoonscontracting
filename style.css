@@ -4,7 +4,7 @@
     font-family: 'Ysabeau SC', sans-serif;
 }
 
-:root {
+/* :root {
     --color-1: #f5ebe0;
     --color-2: #ddbea9;
     --color-3: #cb997e;
@@ -12,7 +12,19 @@
     --color-5: #a5a58d;
     --color-6: #6b705c;
     --color-7: #504136;
+} */
+
+:root {
+    --color-1: #f0f2ef;
+    --color-2: #87bba2;
+    --color-3: #3b6064;
+    --color-4: #2f4858;
+    --color-5: #3b6064;
+    --color-6: #364958;
+    --color-7: #364958;
 }
+
+/* 2f4858 */
 
 .navbar {
     font-size: 1.2rem;
@@ -22,7 +34,8 @@
     padding-left: 2rem;
 }
 .menu-bg {
-    background-color: var(--color-7) !important;
+    /* Originally color-7 */
+    background-color: var(--color-3) !important;
 }
 .navbar-custom {
     position: absolute;
@@ -102,12 +115,14 @@ input.form-control:focus {
 }
 
 .contact-btn {
-    background-color: var(--color-5);
+    /* Originally color-5 */
+    background-color: var(--color-4);
     border: none;
 }
 
 .contact-btn:hover {
-    background-color: var(--color-4);
+    /* Origianlly color-4 */
+    background-color: var(--color-2);
 }
 
 .contact-btn:focus,
@@ -116,7 +131,8 @@ input.form-control:focus {
 }
 
 .footer {
-    background-color: var(--color-5);
+    /* Originall color-5 */
+    background-color: var(--color-4);
 }
 
 .footer-text {
@@ -150,7 +166,8 @@ input.form-control:focus {
         display: none;
     }
     .col-right {
-        background-image: linear-gradient(rgba(107, 112, 92, 0.75), rgba(107, 112, 92, 0.75)), url('/assets/image-1.jpg');
+        /* background-image: linear-gradient(rgba(107, 112, 92, 0.75), rgba(107, 112, 92, 0.75)), url('/assets/image-1.jpg'); */
+        background-image: linear-gradient(rgba(54, 73, 88, 0.75), rgba(54, 73, 88, 0.75)), url('/assets/image-1.jpg');
         background-size: cover;
     }
     .arrow {
